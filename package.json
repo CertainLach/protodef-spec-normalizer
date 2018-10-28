@@ -1,0 +1,14 @@
+{
+  "name": "protodef-spec-normalizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js > test/output.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "traverse": "^0.6.6"
+  }
+}
