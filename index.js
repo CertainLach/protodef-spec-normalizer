@@ -42,6 +42,7 @@ module.exports = (proto) => {
                         if (field.type instanceof Array) {
                             // Mapper and switch can't be extracted from container, because they refer to field in container
                             if (field.type[0] === 'mapper' || field.type[0] === 'switch') return;
+                            if (field.type[0] === 'array' && field.type[1].count) return;
                             let typeName = `extracted_${field.name || ('anon_' + (anonIdx++).toString(36))}_from_` + getPathToThisFromParentTypesContainer(this);
                             parent[typeName] = field.type;
                             field.type = typeName;

@@ -4,7 +4,7 @@ Traverses and flattens protodef spec json
 # Cases handled
 - switch.fields[n]->any
 - option.optional->any
-- container.fields[n]->any except mapper and switch (he refers a container fields by name)
+- container.fields[n]->any except mapper, switch (he refers a container fields by name), and array with countField
 - array.type->any
 
 # Examples
